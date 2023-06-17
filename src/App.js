@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import DogPics from "./DogPics";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -22,6 +23,7 @@ function App() {
     placeholder="Type away..."
     value={text}
     onChange={(e) => setText(e.target.value)}/>
+    <DogPics />
     </div>
     )
 }
